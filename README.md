@@ -6,6 +6,8 @@ Work in progress.
 
 This repository contains the Homebrew formula for `hazelcast-member`.
 
+See https://github.com/hazelcast/hazelcast-member-tool for the source.
+
 ## How to install
 
     $ brew tap hazelcast/homebrew-hazelcast
