@@ -1,8 +1,8 @@
 class HazelcastMember < Formula
   desc "Command-line tool for running Hazelcast member instance(s)"
   homepage "https://github.com/hazelcast/hazelcast"
-  url "https://github.com/hazelcast/hazelcast-member-tool/raw/master/archive/hazelcast-member-3.9.3.3.tar.gz"
-  sha256 "cbbe4d175b473b443eb3aeb0fbdd297c9e784db73ee2f2a409a9c6180c5c4157"
+  url "https://github.com/hazelcast/hazelcast-member-tool/raw/master/archive/hazelcast-member-3.9.3.4.tar.gz"
+  sha256 "d9204b986bcbc9aac984d267d23cc8d0a4f035a5dd1cf81e9943e8cd2ee1169d"
 
   bottle :unneeded
 
@@ -12,7 +12,7 @@ class HazelcastMember < Formula
   def install
     mkpath "#{etc}/hazelcast"
     libexec.install Dir["*"]
-    etc.install_symlink "#{libexec}/etc/hazelcast.xml" => "hazelcast/hazelcast.xml"
+    etc.install_symlink "#{libexec}/etc/hazelcast/hazelcast.xml" => "hazelcast/hazelcast.xml"
     bin.install_symlink Dir["#{libexec}/bin/hazelcast-member"]
     var.mkpath
     inreplace "#{libexec}/bin/utils.sh", "${var}", var.to_s
