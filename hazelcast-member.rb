@@ -1,8 +1,8 @@
 class HazelcastMember < Formula
   desc "Command-line tool for running Hazelcast member instance(s)"
   homepage "https://github.com/hazelcast/hazelcast"
-  url "https://github.com/hazelcast/hazelcast-member-tool/raw/master/archive/hazelcast-member-3.10.4.1.tar.gz"
-  sha256 "31f1159e01a5bf1f76ef7c78a3243abf914b612e009604eabf5fd59664cb869b"
+  url "https://github.com/hazelcast/hazelcast-member-tool/raw/master/archive/hazelcast-member-3.10.6.2.tar.gz"
+  sha256 "3d094a6ee4dc7ba072fd3cd24cbfd0646e3339f79756450dbcdc1c2927271d62"
 
   bottle :unneeded
 
