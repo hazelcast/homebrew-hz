@@ -32,7 +32,7 @@ class HazelcastMember < Formula
     begin
       output = shell_output("#{bin}/hazelcast-member start --verbose -J -Dhazelcast.http.healthcheck.enabled=true")
       assert_match /ID:/, output
-      sleep 3
+      sleep 5
       output = shell_output("#{bin}/hazelcast-member status")
       assert_match /Running/, output
 
