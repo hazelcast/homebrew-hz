@@ -1,8 +1,8 @@
 class HazelcastMember < Formula
-  desc "Command-line tool for running Hazelcast member instance(s)"
-  homepage "https://github.com/hazelcast/hazelcast"
-  url "https://github.com/hazelcast/hazelcast-member-tool/releases/download/v3.11.0/hazelcast-member-3.11.0.tar.gz"
-  sha256 "13d9d8f9c608ea8f672e58dba87500ff38c2c70d1f69e1f3cf30532a9be67056"
+  desc "Tool to run Hazelcast IMDG member instances locally"
+  homepage "https://github.com/hazelcast/hazelcast-member-tool"
+  url "https://github.com/hazelcast/hazelcast-member-tool/releases/download/v3.11.1.0/hazelcast-member-3.11.1.0.tar.gz"
+  sha256 "274e930e0d6c627134cebcf65e48eb7119cddb4b980513c8e3f27648501cff56"
 
   bottle :unneeded
 
@@ -10,22 +10,14 @@ class HazelcastMember < Formula
   depends_on :java => "1.7+"
 
   def install
-    mkpath "#{etc}/hazelcast"
     libexec.install Dir["*"]
-    etc.install_symlink "#{libexec}/etc/hazelcast/hazelcast.xml" => "hazelcast/hazelcast.xml"
+    (etc/"hazelcast").install_symlink "#{libexec}/etc/hazelcast/hazelcast.xml"
     bin.install_symlink Dir["#{libexec}/bin/hazelcast-member"]
     var.mkpath
     inreplace "#{libexec}/bin/utils.sh", "${var}", var.to_s
     inreplace "#{libexec}/bin/utils.sh", "${etc}", etc.to_s
     prefix.install_metafiles
     bash_completion.install "#{libexec}/bin/hazelcast-member-completion.sh" => "hazelcast-member"
-  end
-
-  def caveats
-    <<~EOS
-      To enable tab completion add to your profile:
-        if which hazelcast-member > /dev/null; then eval "$(hazelcast-member init -)"; fi
-    EOS
   end
 
   test do
