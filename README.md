@@ -10,11 +10,11 @@ See [Hazelcast Command Line](https://github.com/hazelcast/hazelcast-command-line
 
 ## How to install
 
-    $ brew tap hazelcast/homebrew-hazelcast
+    $ brew tap hazelcast/homebrew-tap
     $ brew install hazelcast
 
 ### To clean up everything (may come in handy):
 
     $ brew uninstall hazelcast
-    $ brew untap hazelcast/homebrew-hazelcast
+    $ brew untap hazelcast/homebrew-tap
     $ brew cleanup -s
