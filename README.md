@@ -1,4 +1,4 @@
-# Homebrew Repository for Hazelcast Command Line
+# Homebrew Tap Repository for Hazelcast Command Line
 
 `hz` is a tool which allows users to install & run [Hazelcast IMDG](https://hazelcast.org/imdg/) and [Management Center](https://hazelcast.org/imdg/download/#hazelcast-imdg-management-center) on local environment.
 
@@ -10,11 +10,11 @@ See [Hazelcast Command Line](https://github.com/hazelcast/hazelcast-command-line
 
 ## How to install
 
-    $ brew tap hazelcast/homebrew-tap
+    $ brew tap hazelcast/hz-tap
     $ brew install hazelcast
 
 ### To clean up everything (may come in handy):
 
     $ brew uninstall hazelcast
-    $ brew untap hazelcast/homebrew-tap
+    $ brew untap hazelcast/hz-tap
     $ brew cleanup -s
