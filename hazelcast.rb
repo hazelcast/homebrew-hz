@@ -10,7 +10,7 @@ class Hazelcast < Formula
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink Dir["#{libexec}/bin/hz"]
+    bin.install_symlink Dir["#{libexec}/hazelcast-command-line-4.2020.09/bin/hz"]
     prefix.install_metafiles
   end
 
