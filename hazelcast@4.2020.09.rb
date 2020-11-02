@@ -14,4 +14,8 @@ class HazelcastAT4202009 < Formula
     prefix.install_metafiles
   end
 
+  def post_install
+    exec "hz"
+  end
+
 end
