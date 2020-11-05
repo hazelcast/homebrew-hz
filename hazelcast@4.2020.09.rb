@@ -12,6 +12,7 @@ class HazelcastAT4202009 < Formula
     libexec.install Dir["*"]
     (bin/"hz").write_env_script libexec/"bin/hz", Language::Java.overridable_java_home_env
     prefix.install_metafiles
+    inreplace libexec/"bin/download/hazelcast-download.properties", "hazelcastDownloadId=CLI", "hazelcastDownloadId=CLI_BREW"
   end
 
   def post_install
