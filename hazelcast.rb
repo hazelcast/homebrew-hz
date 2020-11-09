@@ -6,12 +6,17 @@ class HazelcastAT4202009 < Formula
 
   bottle :unneeded
 
-  depends_on :java => "1.8+"
+  depends_on "openjdk" => :recommended
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink Dir["#{libexec}/bin/hz"]
+    (bin/"hz").write_env_script libexec/"bin/hz", Language::Java.overridable_java_home_env
     prefix.install_metafiles
+    inreplace libexec/"bin/download/hazelcast-download.properties", "hazelcastDownloadId=CLI", "hazelcastDownloadId=CLI_BREW"
+  end
+
+  def post_install
+    exec "hz"
   end
 
 end
