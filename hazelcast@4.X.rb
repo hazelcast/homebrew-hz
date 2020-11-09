@@ -1,4 +1,4 @@
-class HazelcastAT4202009 < Formula
+class HazelcastAT4X < Formula
   desc "Tool to run Hazelcast IMDG member instances locally"
   homepage "https://github.com/hazelcast/hazelcast-command-line"
   url "https://github.com/hazelcast/hazelcast-command-line/releases/download/v4.2020.09/hazelcast-command-line-4.2020.09.tar.gz"
@@ -6,12 +6,17 @@ class HazelcastAT4202009 < Formula
 
   bottle :unneeded
 
-  depends_on :java => "1.8+"
+  depends_on "openjdk" => :recommended
 
   def install
     libexec.install Dir["*"]
-    bin.install_symlink Dir["#{libexec}/bin/hz"]
+    (bin/"hz").write_env_script libexec/"bin/hz", Language::Java.overridable_java_home_env
     prefix.install_metafiles
+    inreplace libexec/"bin/download/hazelcast-download.properties", "hazelcastDownloadId=CLI", "hazelcastDownloadId=CLI_BREW"
+  end
+
+  def post_install
+    exec "hz"
   end
 
 end
