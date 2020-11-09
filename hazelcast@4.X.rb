@@ -1,4 +1,4 @@
-class HazelcastAT4202009 < Formula
+class HazelcastAT4X < Formula
   desc "Tool to run Hazelcast IMDG member instances locally"
   homepage "https://github.com/hazelcast/hazelcast-command-line"
   url "https://github.com/hazelcast/hazelcast-command-line/releases/download/v4.2020.09/hazelcast-command-line-4.2020.09.tar.gz"
