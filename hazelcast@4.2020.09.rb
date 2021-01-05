@@ -6,7 +6,7 @@ class HazelcastAT4202009 < Formula
 
   bottle :unneeded
 
-  depends_on :java => "1.8+"
+  depends_on "openjdk" => :recommended
 
   def install
     libexec.install Dir["*"]
