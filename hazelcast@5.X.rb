@@ -10,8 +10,13 @@ class HazelcastAT5X < Formula
   
     def install
       libexec.install Dir["*"]
-      (bin/"hz").write_env_script libexec/"bin/hz", Language::Java.overridable_java_home_env
-      (bin/"hz-cli").write_env_script libexec/"bin/hz-cli", Language::Java.overridable_java_home_env
+      Dir["#{libexec}/bin/hz*"].each do |path|
+        executable_name = File.basename(path)
+        if executable_name.end_with? ".bat"
+          next
+        end
+        (bin/executable_name).write_env_script libexec/"bin/#{executable_name}", Language::Java.overridable_java_home_env
+      end
       prefix.install_metafiles
       inreplace libexec/"bin/download/hazelcast-download.properties", "hazelcastDownloadId=CLI", "hazelcastDownloadId=CLI_BREW"
     end
