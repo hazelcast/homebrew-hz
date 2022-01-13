@@ -4,8 +4,6 @@ class HazelcastAT42021031 < Formula
   url "https://github.com/hazelcast/hazelcast-command-line/releases/download/v4.2021.03.1/hazelcast-4.2.tar.gz"
   sha256 "2663fa7b8f7240d379e2a7e36d6d69839cd250f2c64d0261396a557d5e1f3332"
 
-  bottle :unneeded
-
   depends_on "openjdk" => :recommended
 
   def install

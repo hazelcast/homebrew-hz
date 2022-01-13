@@ -3,11 +3,9 @@ class HazelcastAT5X < Formula
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     url "https://github.com/hazelcast/hazelcast-command-line/releases/download/v5.2021.07.1/hazelcast-5.0-BETA-1.tar.gz"
     sha256 "f108d22a1aec61bbd637f89ff522af7d9861ef13afcfad24a5095127f04f091d"
-  
-    bottle :unneeded
-  
+
     depends_on "openjdk" => :recommended
-  
+
     def install
       libexec.install Dir["*"]
       Dir["#{libexec}/bin/hz*"].each do |path|
@@ -24,6 +22,5 @@ class HazelcastAT5X < Formula
     def post_install
       exec "hz"
     end
-  
+
   end
-  
