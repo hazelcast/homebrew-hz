@@ -32,7 +32,8 @@ Install snapshot version of Hazelcast
 
     $ brew install hazelcast@5.1.snapshot
 
-Install Hazelcast Enterprise edition (you need a license key to run it)
+Install Hazelcast Enterprise edition (you need a license key to run it,
+see [Installing a License Key](https://docs.hazelcast.com/hazelcast/latest/getting-started/get-started-enterprise#installing-a-license-key)
 
     $ brew install hazelcast-enterprise
 
