@@ -21,7 +21,7 @@ class HazelcastEnterpriseAT50 < Formula
     end
   
     def post_install
-      exec "hz"
+      exec "echo Hazelcast has been installed."
     end
 
   end
