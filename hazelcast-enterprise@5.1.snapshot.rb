@@ -1,8 +1,8 @@
 class HazelcastEnterpriseAT51Snapshot < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    url "https://repository.hazelcast.com/snapshot/com/hazelcast/hazelcast-enterprise-distribution/5.1-SNAPSHOT/hazelcast-enterprise-distribution-5.1-20220121.091130-321.tar.gz"
-    sha256 "cfac79a75b0fc23bf3c5fe6a13bee22094f0bc6322fba44c7912b92d4cfa6221"
+    url "https://repository.hazelcast.com/snapshot/com/hazelcast/hazelcast-enterprise-distribution/5.1-SNAPSHOT/hazelcast-enterprise-distribution-5.1-20220121.123953-324.tar.gz"
+    sha256 "d65439fc98f89f1171329cf2f5789ebdbb37fee788bc7203faf61da4d0e85447"
     conflicts_with "hazelcast"
   
     depends_on "openjdk" => :recommended
@@ -21,7 +21,7 @@ class HazelcastEnterpriseAT51Snapshot < Formula
     end
   
     def post_install
-      exec "hz"
+      exec "echo Hazelcast has been installed."
     end
 
   end
