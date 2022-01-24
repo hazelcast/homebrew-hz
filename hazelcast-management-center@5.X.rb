@@ -1,6 +1,7 @@
 class HazelcastManagementCenterAT5X < Formula
     desc "Tool to run Hazelcast Management Center"
     homepage "https://github.com/hazelcast/hazelcast-command-line"
+    version "5.0.4"
     url "https://repository.hazelcast.com/download/management-center/hazelcast-management-center-5.0.4.tar.gz"
     sha256 "80828a15df806ace514174836ad5794e1bc257b171b85d582aa6f91e2acd22aa"
 
