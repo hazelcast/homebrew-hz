@@ -20,7 +20,7 @@ class HazelcastManagementCenterAT5X < Formula
     end
   
     def post_install
-      exec "TODO"
+      exec "echo Hazelcast Management Center has been installed."
     end
 
   end
