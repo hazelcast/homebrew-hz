@@ -1,8 +1,8 @@
 class HazelcastAT51Snapshot < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    url "https://oss.sonatype.org/content/repositories/snapshots/com/hazelcast/hazelcast-distribution/5.1-SNAPSHOT/hazelcast-distribution-5.1-20220208.091033-346.tar.gz"
-    sha256 "22ad2417fba5840e77844dd1a8116dfbad565da7f4d8971e1696930d2983aed7"
+    url "https://oss.sonatype.org/content/repositories/snapshots/com/hazelcast/hazelcast-distribution/5.1-SNAPSHOT/hazelcast-distribution-5.1-20220208.104408-347.tar.gz"
+    sha256 "76eb6b0d19860ea079de7e50b1763e3b93a1e650ca519079eb5c25ae3dbd234f"
     conflicts_with "hazelcast-enterprise"
   
     depends_on "openjdk" => :recommended
