@@ -16,9 +16,18 @@ class HazelcastAT5X < Formula
         end
         (bin/executable_name).write_env_script libexec/"bin/#{executable_name}", Language::Java.overridable_java_home_env
       end
+      etc.install "#{libexec}/config" => "hazelcast"
+      rm_rf libexec/"config"
+      libexec.install_symlink "#{etc}/hazelcast" => "config"
       prefix.install_metafiles
       inreplace libexec/"lib/hazelcast-download.properties", "hazelcastDownloadId=distribution", "hazelcastDownloadId=brew"
     end
+
+    def caveats
+        <<~EOS
+          Configuration files have been placed in #{etc}/hazelcast.
+        EOS
+      end
   
     def post_install
       exec "echo Hazelcast has been installed."
