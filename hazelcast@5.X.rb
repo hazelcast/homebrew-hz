@@ -27,7 +27,7 @@ class HazelcastAT5X < Formula
         <<~EOS
           Configuration files have been placed in #{etc}/hazelcast.
         EOS
-      end
+    end
   
     def post_install
       exec "echo Hazelcast has been installed."
