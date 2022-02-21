@@ -1,8 +1,8 @@
 class HazelcastEnterpriseAT52Snapshot < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    url "https://repository.hazelcast.com/snapshot/com/hazelcast/hazelcast-enterprise-distribution/5.2-SNAPSHOT/hazelcast-enterprise-distribution-5.2-20220218.135325-1.tar.gz"
-    sha256 "6a67809a76c3c68ba5dd6771fc5362959520a866f40e857c47df22ed43cdfa61"
+    url "https://repository.hazelcast.com/snapshot/com/hazelcast/hazelcast-enterprise-distribution/5.2-SNAPSHOT/hazelcast-enterprise-distribution-5.2-20220221.115948-2.tar.gz"
+    sha256 "11866cc55e038e273777eeff437d322caf47178398179f0a171aa52c72acf856"
     conflicts_with "hazelcast"
   
     depends_on "openjdk" => :recommended
@@ -16,8 +16,17 @@ class HazelcastEnterpriseAT52Snapshot < Formula
         end
         (bin/executable_name).write_env_script libexec/"bin/#{executable_name}", Language::Java.overridable_java_home_env
       end
+      etc.install "#{libexec}/config" => "hazelcast"
+      rm_rf libexec/"config"
+      libexec.install_symlink "#{etc}/hazelcast" => "config"
       prefix.install_metafiles
       inreplace libexec/"lib/hazelcast-download.properties", "hazelcastDownloadId=distribution", "hazelcastDownloadId=brew"
+    end
+
+    def caveats
+        <<~EOS
+          Configuration files have been placed in #{etc}/hazelcast.
+        EOS
     end
   
     def post_install
