@@ -1,20 +1,20 @@
-# Homebrew Tap Repository for Hazelcast Command Line
+# Homebrew Tap Repository for Hazelcast Platform
 
-`hz` is a tool which allows users to install & run [Hazelcast IMDG](https://hazelcast.org/imdg/) and [Management Center](https://hazelcast.org/imdg/download/#hazelcast-imdg-management-center) on local environment.
+`hz` is a tool which allows users to install & run [Hazelcast IMDG](https://hazelcast.org/imdg/) on a local environment.
 
-`hzcloud` is a command line tool to make actions on Hazelcast Cloud easily
+`hzcloud` is a command line tool to make actions on Hazelcast Cloud easily.
 
 ## About
 
-This repository contains the Homebrew formula for `hz` and  `hzcloud`.
+This repository contains the Homebrew formulas for `hazelcast`, `hazelcast-enterprise` and  `hzcloud`.
 
-See [Hazelcast Command Line](https://github.com/hazelcast/hazelcast-command-line/) for the source code.
+See [Hazelcast Packaging](https://github.com/hazelcast/hazelcast-packaging) for the source code.
 
 See [Hazelcast Cloud Command Line](https://github.com/hazelcast/hazelcast-cloud-cli) for the source code
 
 ## How to install
 
-### Tap repository
+### Add tap repository
 
     brew tap hazelcast/hz
 
@@ -24,9 +24,20 @@ Install the community version of Hazelcast
 
     brew install hazelcast 
 
+Upgrade the community version of Hazelcast
+
+    brew upgrade hazelcast 
+
+Install particular minor version of Hazelcast
+
+    brew install hazelcast-5.1
+
 Install particular version of Hazelcast
 
     brew install hazelcast@5.0.1
+
+NOTE: Upgrade of a particular version is not supported by brew. You need to uninstall the old package first 
+and then install `hazelcast` or `hazelcast-x.y` instead
 
 Install snapshot version of Hazelcast
 
@@ -42,9 +53,17 @@ another way)
 
     brew install hazelcast --without-openjdk
 
+### Configuration
+
+Starting from the 5.1 version configuration files are preserved between upgrades and stored in
+
+    $(brew --prefix)/etc/hazelcast
+
+(usually `/usr/local/etc/hazelcast` or `/opt/homebrew/etc/hazelcast`)
+
 ### Install Hazelcast CLoud CLI
 
-    brew install hzcloud 
+    brew install hzcloud
 
 ### To clean up everything (may come in handy):
 
@@ -52,3 +71,4 @@ another way)
     brew uninstall hzcloud
     brew untap hazelcast/hz
     brew cleanup -s
+    rm -rf $(brew --prefix)/etc/hazelcast
