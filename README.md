@@ -65,7 +65,7 @@ Starting from the 5.1 version configuration files are preserved between upgrades
 
     brew install hzcloud
 
-### To clean up everything (may come in handy):
+### Clean Up
 
     brew uninstall hazelcast
     brew uninstall hzcloud
