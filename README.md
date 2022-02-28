@@ -16,39 +16,39 @@ See [Hazelcast Cloud Command Line](https://github.com/hazelcast/hazelcast-cloud-
 
 ### Tap repository
 
-    $ brew tap hazelcast/hz
+    brew tap hazelcast/hz
 
 ### Install Hazelcast
 
 Install the community version of Hazelcast
 
-    $ brew install hazelcast 
+    brew install hazelcast 
 
 Install particular version of Hazelcast
 
-    $ brew install hazelcast@5.0.1
+    brew install hazelcast@5.0.1
 
 Install snapshot version of Hazelcast
 
-    $ brew install hazelcast@5.1.snapshot
+    brew install hazelcast@5.1.snapshot
 
 Install Hazelcast Enterprise edition (you need a license key to run it,
 see [Installing a License Key](https://docs.hazelcast.com/hazelcast/latest/getting-started/get-started-enterprise#installing-a-license-key)
 
-    $ brew install hazelcast-enterprise
+    brew install hazelcast-enterprise
 
 Install without Java dependency (you already have installed Java in 
 another way)
 
-    $ brew install hazelcast --without-openjdk
+    brew install hazelcast --without-openjdk
 
 ### Install Hazelcast CLoud CLI
 
-    $ brew install hzcloud 
+    brew install hzcloud 
 
 ### To clean up everything (may come in handy):
 
-    $ brew uninstall hazelcast
-    $ brew uninstall hzcloud
-    $ brew untap hazelcast/hz
-    $ brew cleanup -s
+    brew uninstall hazelcast
+    brew uninstall hzcloud
+    brew untap hazelcast/hz
+    brew cleanup -s
