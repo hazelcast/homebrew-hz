@@ -55,7 +55,7 @@ another way)
 
 ### Configuration
 
-Starting from the 5.1 version configuration files are preserved between upgrades and stored in
+Starting from version 5.1, configuration files are preserved between upgrades and stored in
 
     $(brew --prefix)/etc/hazelcast
 
