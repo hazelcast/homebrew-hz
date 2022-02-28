@@ -37,7 +37,7 @@ Install particular version of Hazelcast
     brew install hazelcast@5.0.1
 
 NOTE: To upgrade to a particular version, uninstall the old package first 
-and then install `hazelcast` or `hazelcast-x.y` instead
+and then install `hazelcast` for the latest version or `hazelcast-x.y` for another version.
 
 Install snapshot version of Hazelcast
 
