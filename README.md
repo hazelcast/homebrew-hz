@@ -14,7 +14,7 @@ See [Hazelcast Cloud Command Line](https://github.com/hazelcast/hazelcast-cloud-
 
 ## How to install
 
-### Add tap repository
+### Add Tap Repository
 
     brew tap hazelcast/hz
 
