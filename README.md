@@ -1,24 +1,19 @@
 # Homebrew Tap Repository for Hazelcast Platform
 
-`hz` is a tool which allows users to install & run [Hazelcast IMDG](https://hazelcast.org/imdg/) on a local environment.
-
-`hzcloud` is a command line tool to make actions on Hazelcast Cloud easily.
-
 ## About
 
-This repository contains the Homebrew formulas for `hazelcast`, `hazelcast-enterprise` and  `hzcloud`.
+This repository contains the Homebrew formulas for `hazelcast`, `hazelcast-enterprise` and  `hzcloud` packages.
 
-See [Hazelcast Packaging](https://github.com/hazelcast/hazelcast-packaging) for the source code.
+- `hazelcast` and `hazelcast-enterprise` packages contain the server distribution of [Hazelcast Platform](https://hazelcast.com/products/hazelcast-platform/).
+- `hzcloud` package contains `hzcloud` command line tool for managing Hazelcast Cloud clusters.
 
-See [Hazelcast Cloud Command Line](https://github.com/hazelcast/hazelcast-cloud-cli) for the source code
-
-## How to install
+## How to Install Hazelcast
 
 ### Add Tap Repository
 
     brew tap hazelcast/hz
 
-### Install Hazelcast
+### Install Package
 
 Install the community version of Hazelcast
 
@@ -61,14 +56,36 @@ Starting from version 5.1, configuration files are preserved between upgrades an
 
 (usually `/usr/local/etc/hazelcast` or `/opt/homebrew/etc/hazelcast`)
 
-### Install Hazelcast CLoud CLI
+### Starting Instance
+
+Start the Hazelcast instance with `hz` command
+
+    hz start
+
+### Clean Up
+
+    brew uninstall hazelcast
+    brew untap hazelcast/hz
+    brew cleanup -s
+    rm -rf $(brew --prefix)/etc/hazelcast
+
+## How to Install Hazelcast Cloud CLI
+
+### Add Tap Repository
+
+    brew tap hazelcast/hz
+
+### Install Package
 
     brew install hzcloud
 
 ### Clean Up
 
-    brew uninstall hazelcast
     brew uninstall hzcloud
     brew untap hazelcast/hz
     brew cleanup -s
-    rm -rf $(brew --prefix)/etc/hazelcast
+
+## More Information
+
+- [Hazelcast Packaging](https://github.com/hazelcast/hazelcast-packaging)
+- [Hazelcast Cloud Command Line](https://github.com/hazelcast/hazelcast-cloud-cli)
