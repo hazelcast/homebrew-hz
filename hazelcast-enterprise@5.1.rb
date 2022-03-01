@@ -1,4 +1,4 @@
-class HazelcastEnterprise51 < Formula
+class HazelcastEnterpriseAT51 < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     url "https://repository.hazelcast.com/release/com/hazelcast/hazelcast-enterprise-distribution/5.1/hazelcast-enterprise-distribution-5.1.tar.gz"
