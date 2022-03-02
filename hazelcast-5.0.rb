@@ -1,10 +1,10 @@
-class HazelcastEnterprise52 < Formula
+class Hazelcast50 < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    url "https://repository.hazelcast.com/snapshot/com/hazelcast/hazelcast-enterprise-distribution/5.2-SNAPSHOT/hazelcast-enterprise-distribution-5.2-20220302.120523-20.tar.gz"
-    sha256 "88b351d28502d15332716b7a4aeca17a8efe9ec42c7d6bcf011bdf27ff14b547"
-    conflicts_with "hazelcast"
-  
+    url "https://repo.maven.apache.org/maven2/com/hazelcast/hazelcast-distribution/5.0.2/hazelcast-distribution-5.0.2.tar.gz"
+    sha256 "057dbbeb5fe1fb0ec77e4561e4dcf0f26ad917e1ade6f9ce8d232b5bb6a408cc"
+    conflicts_with "hazelcast-enterprise"
+
     depends_on "openjdk" => :recommended
 
     def install
@@ -28,7 +28,7 @@ class HazelcastEnterprise52 < Formula
           Configuration files have been placed in #{etc}/hazelcast.
         EOS
       end
-  
+
     def post_install
       exec "echo Hazelcast has been installed."
     end
