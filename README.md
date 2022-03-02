@@ -1,54 +1,91 @@
-# Homebrew Tap Repository for Hazelcast Command Line
-
-`hz` is a tool which allows users to install & run [Hazelcast IMDG](https://hazelcast.org/imdg/) and [Management Center](https://hazelcast.org/imdg/download/#hazelcast-imdg-management-center) on local environment.
-
-`hzcloud` is a command line tool to make actions on Hazelcast Cloud easily
+# Homebrew Tap Repository for Hazelcast Platform
 
 ## About
 
-This repository contains the Homebrew formula for `hz` and  `hzcloud`.
+This repository contains the Homebrew formulas for `hazelcast`, `hazelcast-enterprise` and  `hzcloud` packages.
 
-See [Hazelcast Command Line](https://github.com/hazelcast/hazelcast-command-line/) for the source code.
+- `hazelcast` and `hazelcast-enterprise` packages contain the server distribution of [Hazelcast Platform](https://hazelcast.com/products/hazelcast-platform/).
+- `hzcloud` package contains `hzcloud` command line tool for managing Hazelcast Cloud clusters.
 
-See [Hazelcast Cloud Command Line](https://github.com/hazelcast/hazelcast-cloud-cli) for the source code
+## How to Install Hazelcast
 
-## How to install
+### Add Tap Repository
 
-### Tap repository
+    brew tap hazelcast/hz
 
-    $ brew tap hazelcast/hz
-
-### Install Hazelcast
+### Install Package
 
 Install the community version of Hazelcast
 
-    $ brew install hazelcast 
+    brew install hazelcast 
+
+Upgrade the community version of Hazelcast
+
+    brew upgrade hazelcast 
+
+Install particular minor version of Hazelcast
+
+    brew install hazelcast-5.1
 
 Install particular version of Hazelcast
 
-    $ brew install hazelcast@5.0.1
+    brew install hazelcast@5.0.1
+
+NOTE: To upgrade to a particular version, uninstall the old package first 
+and then install `hazelcast` for the latest version or `hazelcast-x.y` for another version.
 
 Install snapshot version of Hazelcast
 
-    $ brew install hazelcast@5.1.snapshot
+    brew install hazelcast@5.1.snapshot
 
 Install Hazelcast Enterprise edition (you need a license key to run it,
 see [Installing a License Key](https://docs.hazelcast.com/hazelcast/latest/getting-started/get-started-enterprise#installing-a-license-key)
 
-    $ brew install hazelcast-enterprise
+    brew install hazelcast-enterprise
 
 Install without Java dependency (you already have installed Java in 
 another way)
 
-    $ brew install hazelcast --without-openjdk
+    brew install hazelcast --without-openjdk
 
-### Install Hazelcast CLoud CLI
+### Configuration
 
-    $ brew install hzcloud 
+Starting from version 5.1, configuration files are preserved between upgrades and stored in
 
-### To clean up everything (may come in handy):
+    $(brew --prefix)/etc/hazelcast
 
-    $ brew uninstall hazelcast
-    $ brew uninstall hzcloud
-    $ brew untap hazelcast/hz
-    $ brew cleanup -s
+(usually `/usr/local/etc/hazelcast` or `/opt/homebrew/etc/hazelcast`)
+
+### Starting Instance
+
+Start the Hazelcast instance with `hz` command
+
+    hz start
+
+### Clean Up
+
+    brew uninstall hazelcast
+    brew untap hazelcast/hz
+    brew cleanup -s
+    rm -rf $(brew --prefix)/etc/hazelcast
+
+## How to Install Hazelcast Cloud CLI
+
+### Add Tap Repository
+
+    brew tap hazelcast/hz
+
+### Install Package
+
+    brew install hzcloud
+
+### Clean Up
+
+    brew uninstall hzcloud
+    brew untap hazelcast/hz
+    brew cleanup -s
+
+## More Information
+
+- [Hazelcast Packaging](https://github.com/hazelcast/hazelcast-packaging)
+- [Hazelcast Cloud Command Line](https://github.com/hazelcast/hazelcast-cloud-cli)
