@@ -1,8 +1,8 @@
 class HazelcastEnterpriseAT52Snapshot < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    url "https://repository.hazelcast.com/snapshot/com/hazelcast/hazelcast-enterprise-distribution/5.2-SNAPSHOT/hazelcast-enterprise-distribution-5.2-20220304.130103-27.tar.gz"
-    sha256 "9c7c7bba788e39d3cc8377e69715b72ae85a6e6dc7d6254af159aebfcb909aac"
+    url "https://repository.hazelcast.com/snapshot/com/hazelcast/hazelcast-enterprise-distribution/5.2-SNAPSHOT/hazelcast-enterprise-distribution-5.2-20220304.143934-28.tar.gz"
+    sha256 "bbc1bc5fe20764501c7c6c19de257b51dca8ef8b1632cd1115d79cf9d3dd991d"
     conflicts_with "hazelcast"
   
     depends_on "openjdk" => :recommended
