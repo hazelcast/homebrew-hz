@@ -1,4 +1,4 @@
-class HazelcastManagementCenterAT52Snapshot < Formula
+class HazelcastManagementCenterSnapshot < Formula
     desc "Tool to run Hazelcast Management Center"
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     version "5.0.4"
