@@ -1,8 +1,8 @@
 class Hzcloud < Formula
   desc "Hazelcast Cloud Enterprise is an enterprise-grade, on-demand managed service for Hazelcast IMDG"
   homepage "http://cloud.hazelcast.com/"
-  url "https://github.com/hazelcast/hazelcast-cloud-cli/archive/v1.5.0.tar.gz"
-  sha256 "17ce9f237a9ab7e8a42542ccedaba0f6272c6a0805af59ae7098a576fb131988"
+  url "https://github.com/hazelcast/hazelcast-cloud-cli/archive/v1.6.2.tar.gz"
+  sha256 "d209e383a96615e887a76a09b12f8b40c84e726d801339d5223ee9051e3c66fa"
   depends_on "go" => :build
   
   def install
