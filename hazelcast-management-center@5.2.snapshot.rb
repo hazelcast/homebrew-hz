@@ -3,7 +3,7 @@ class HazelcastManagementCenterAT52Snapshot < Formula
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     version "5.0.4"
     url "https://repository.hazelcast.com/download/management-center/hazelcast-management-center-latest-snapshot.tar.gz"
-    sha256 "e4b74fca867c58656026338b4d9cc366338d2927daedb640377800bee705e2e3"
+    sha256 "94315843a92ea63283bf8c1bf89a30fa3ed21bee919b13f86cb85c0de162e6d0"
 
     depends_on "openjdk" => :recommended
 
