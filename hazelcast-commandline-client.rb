@@ -11,7 +11,7 @@ class HazelcastCommandlineClient < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/hazelcast/hazelcast-commandline-client/releases/download/v5.2.0-beta2/hazelcast-commandline-client_5.2.0-beta2_Darwin_arm64.tar.gz"
-      sha256 "ff66bb89f120924f19fcd389dcd983bf0effb1243cd4cc786c91b3225bbc28b1"
+      sha256 "26a45a0a4c3fdeabc97169d67ea020c3e1f4eb514f3094867f693f4e4242db6b"
 
       def install
         bin.install "hzc"
@@ -21,7 +21,7 @@ class HazelcastCommandlineClient < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/hazelcast/hazelcast-commandline-client/releases/download/v5.2.0-beta2/hazelcast-commandline-client_5.2.0-beta2_Darwin_x86_64.tar.gz"
-      sha256 "af9342c8d0d5ed86926841f2e9c8183d34b0c4e7e9f4184d34eb1ca886db081d"
+      sha256 "4531a4595aabca1b6a335020fc4508ea0136a0c529a85b4054e6fb059c67318a"
 
       def install
         bin.install "hzc"
@@ -34,7 +34,7 @@ class HazelcastCommandlineClient < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/hazelcast/hazelcast-commandline-client/releases/download/v5.2.0-beta2/hazelcast-commandline-client_5.2.0-beta2_Linux_arm64.tar.gz"
-      sha256 "bf2b3b52be9a4645d6785cc3eebf3fc9adb0ea7d14a95226ee3f93d56ea8aa7b"
+      sha256 "bff2bd0b871b86cc8acde59d924e22674566a1fac6fd71827462761ed1fc7e9c"
 
       def install
         bin.install "hzc"
@@ -44,7 +44,7 @@ class HazelcastCommandlineClient < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/hazelcast/hazelcast-commandline-client/releases/download/v5.2.0-beta2/hazelcast-commandline-client_5.2.0-beta2_Linux_x86_64.tar.gz"
-      sha256 "10ad361e9e2f12b9e6b35a3798d421fb4ce8b8b9879a8c6b80aebd7750af7ca7"
+      sha256 "6d6cc3dbfaf9487635184b5a1be3a418f0ae47048f534b975c8cbdf33a945dcb"
 
       def install
         bin.install "hzc"
