@@ -3,7 +3,7 @@ class HazelcastManagementCenterSnapshot < Formula
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     version "5.4-SNAPSHOT"
     url "https://repository.hazelcast.com/download/management-center/hazelcast-management-center-latest-snapshot.tar.gz"
-    sha256 "39da5407d7179e992100221d38f4de40c8638a86b8c3a4b790a398d01677bbd5"
+    sha256 "19698112f651186d7067a32d3c762ad95f1cf31074f9ac70d09f27cff6b15b4f"
     conflicts_with "hazelcast-management-center@5.4.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.3.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.3.2", because: "you can install only a single hazelcast-management-center package"
