@@ -1,8 +1,8 @@
 class Hazelcast53 < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    url "https://repo.maven.apache.org/maven2/com/hazelcast/hazelcast-distribution/5.3.2/hazelcast-distribution-5.3.2.tar.gz"
-    sha256 "102f683226b88907bb0918d8734e112e5d38fb397f85cb0a5b7a0bd51a921ff0"
+    url "https://repo.maven.apache.org/maven2/com/hazelcast/hazelcast-distribution/5.3.5/hazelcast-distribution-5.3.5.tar.gz"
+    sha256 "a78eb6e9a21e079c5798865b6521399312693533b57e099a7b6fd8ad039eda22"
     conflicts_with "hazelcast-enterprise@5.4.0.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.3.2", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.3.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
@@ -40,6 +40,7 @@ class Hazelcast53 < Formula
     conflicts_with "hazelcast-enterprise-5.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise-5.0", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.4.0.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
+    conflicts_with "hazelcast@5.3.5", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.3.2", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.3.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.3.0.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
