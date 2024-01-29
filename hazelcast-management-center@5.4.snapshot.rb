@@ -23,7 +23,7 @@ class HazelcastManagementCenterAT54Snapshot < Formula
     conflicts_with "hazelcast-management-center-snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center", because: "you can install only a single hazelcast-management-center package"
 
-    depends_on "openjdk" => :recommended
+    depends_on "openjdk@21" => :recommended
 
     def install
       libexec.install Dir["*"]
