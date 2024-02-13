@@ -1,4 +1,4 @@
-class HazelcastBeta < Formula
+class HazelcastAT540Beta2 < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     url "https://repo.maven.apache.org/maven2/com/hazelcast/hazelcast-distribution/5.4.0-BETA-2/hazelcast-distribution-5.4.0-BETA-2.tar.gz"
