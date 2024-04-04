@@ -1,10 +1,11 @@
 class HazelcastSnapshot < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    url "https://oss.sonatype.org/content/repositories/snapshots/com/hazelcast/hazelcast-distribution/5.5.0-SNAPSHOT/hazelcast-distribution-5.5.0-20240402.122959-142.tar.gz"
-    sha256 "9c2bc6285836cde140d538eb71bc3ba1709e3ca8b4d522c2bb62adb3f65c619d"
+    url "https://oss.sonatype.org/content/repositories/snapshots/com/hazelcast/hazelcast-distribution/5.5.0-SNAPSHOT/hazelcast-distribution-5.5.0-20240403.210929-153.tar.gz"
+    sha256 "2ecc2d9110bd05ae4e7dc1026741dd02b646010e76accfdde730fc1d1377922b"
     conflicts_with "hazelcast-enterprise@5.5.0.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.4.0.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
+    conflicts_with "hazelcast-enterprise@5.3.7", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.3.6", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.3.5", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.3.2", because: "you can install only a single hazelcast or hazelcast-enterprise package"
