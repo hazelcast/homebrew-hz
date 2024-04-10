@@ -1,8 +1,8 @@
 class HazelcastAT550Snapshot < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    url "https://oss.sonatype.org/content/repositories/snapshots/com/hazelcast/hazelcast-distribution/5.5.0-SNAPSHOT/hazelcast-distribution-5.5.0-20240404.130554-161.tar.gz"
-    sha256 "a8df967ffb538500363a5621b53e7ffc6ce0fc2451e507fdfcbf6110236af29d"
+    url "https://oss.sonatype.org/content/repositories/snapshots/com/hazelcast/hazelcast-distribution/5.5.0-SNAPSHOT/hazelcast-distribution-5.5.0-20240409.130715-170.tar.gz"
+    sha256 "cfca018b4eae66038cc8aa3af8c52ea8ad02df2d3eecfacd9f8eb27250423b2e"
     conflicts_with "hazelcast-enterprise@5.5.0.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.4.0.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.3.7", because: "you can install only a single hazelcast or hazelcast-enterprise package"
@@ -45,6 +45,7 @@ class HazelcastAT550Snapshot < Formula
     conflicts_with "hazelcast-enterprise-5.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise-5.0", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.4.0.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
+    conflicts_with "hazelcast@5.3.7", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.3.6", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.3.5", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.3.2", because: "you can install only a single hazelcast or hazelcast-enterprise package"
