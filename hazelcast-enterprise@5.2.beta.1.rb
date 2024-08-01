@@ -20,11 +20,7 @@ class HazelcastEnterpriseAT52Beta1 < Formula
     conflicts_with "hazelcast-enterprise-snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise-5.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise-5.0", because: "you can install only a single hazelcast or hazelcast-enterprise package"
-    conflicts_with "hazelcast@5.2.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
-    conflicts_with "hazelcast@5.1.snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
-    conflicts_with "hazelcast@5.1.dr8", because: "you can install only a single hazelcast or hazelcast-enterprise package"
-    conflicts_with "hazelcast@5.1.dr6", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.1.3", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.1.2", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.1.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
@@ -46,7 +42,6 @@ class HazelcastEnterpriseAT52Beta1 < Formula
     conflicts_with "hazelcast@4.2020.09", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-5.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-5.0", because: "you can install only a single hazelcast or hazelcast-enterprise package"
-    conflicts_with "hazelcast-snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast", because: "you can install only a single hazelcast or hazelcast-enterprise package"
 
     depends_on "openjdk" => :recommended
