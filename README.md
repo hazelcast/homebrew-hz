@@ -34,12 +34,8 @@ Install particular version of Hazelcast
 NOTE: To upgrade to a particular version, uninstall the old package first 
 and then install `hazelcast` for the latest version or `hazelcast-x.y` for another version.
 
-Install snapshot version of Hazelcast
-
-    brew install hazelcast@5.1.snapshot
-
 Install Hazelcast Enterprise edition (you need a license key to run it,
-see [Installing a License Key](https://docs.hazelcast.com/hazelcast/latest/getting-started/get-started-enterprise#installing-a-license-key)
+see [Installing a License Key](https://docs.hazelcast.com/hazelcast/latest/getting-started/get-started-enterprise#installing-a-license-key))
 
     brew install hazelcast-enterprise
 
