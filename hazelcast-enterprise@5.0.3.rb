@@ -14,7 +14,6 @@ class HazelcastEnterpriseAT503 < Formula
     conflicts_with "hazelcast-enterprise@5.0.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise-snapshot", because: "you can install only a single hazelcast or hazelcast-enterprise package"
-    conflicts_with "hazelcast-enterprise-devel", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise-5.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise-5.0", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast@5.1", because: "you can install only a single hazelcast or hazelcast-enterprise package"
