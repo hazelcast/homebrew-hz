@@ -33,6 +33,7 @@ class HazelcastManagementCenterAT570 < Formula
     conflicts_with "hazelcast-management-center@5.1.4", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.1.1", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.0.4", because: "you can install only a single hazelcast-management-center package"
+    conflicts_with "hazelcast-management-center-5.7", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.6", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.5", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.4", because: "you can install only a single hazelcast-management-center package"
