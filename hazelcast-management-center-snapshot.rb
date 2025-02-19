@@ -1,9 +1,9 @@
 class HazelcastManagementCenterSnapshot < Formula
     desc "Tool to run Hazelcast Management Center"
     homepage "https://github.com/hazelcast/hazelcast-command-line"
-    version "5.7.2-SNAPSHOT"
+    version "6.0.0-SNAPSHOT"
     url "https://repository.hazelcast.com/download/management-center/hazelcast-management-center-latest-snapshot.tar.gz"
-    sha256 "4fdb691fbb2521bc8a43d2b6eb7c233c3886f8350b4bdd862fc8dd0c21b3cff2"
+    sha256 "c440c4c83d296ed361bfa8590da271c94a2f14069667032f7fb2fd995d28d683"
     conflicts_with "hazelcast-management-center@6.0.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@6.0.0.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.7.2.snapshot", because: "you can install only a single hazelcast-management-center package"
