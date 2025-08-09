@@ -2,7 +2,7 @@ class HazelcastEnterpriseAT600Snapshot < Formula
     desc "Hazelcast is a streaming and memory-first application platform for fast, stateful, data-intensive workloads on-premises, at the edge or as a fully managed cloud service."
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     url "https://repository.hazelcast.com/snapshot/com/hazelcast/hazelcast-enterprise-distribution/6.0.0-SNAPSHOT/hazelcast-enterprise-distribution-6.0.0-SNAPSHOT.tar.gz"
-    sha256 "ce0de7ab06767c18b666d75a1dc3fd9b2b9e901aeb238d45470a226e2b3bd211"
+    sha256 "6588ba844aa7f81b56714ed65c41bb371c0706618284baacf9699b47f70bdd3b"
     conflicts_with "hazelcast-enterprise@5.5.7", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.5.6", because: "you can install only a single hazelcast or hazelcast-enterprise package"
     conflicts_with "hazelcast-enterprise@5.5.5", because: "you can install only a single hazelcast or hazelcast-enterprise package"
