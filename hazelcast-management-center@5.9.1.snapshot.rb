@@ -1,4 +1,4 @@
-class HazelcastManagementCenterSnapshot < Formula
+class HazelcastManagementCenterAT591Snapshot < Formula
     desc "Tool to run Hazelcast Management Center"
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     version "5.9.1-SNAPSHOT"
@@ -6,7 +6,6 @@ class HazelcastManagementCenterSnapshot < Formula
     sha256 "921832dc989e04e8417e64cba04314003d2bac4bddd881b31e9f5508d8f5dee7"
     conflicts_with "hazelcast-management-center@6.0.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@6.0.0.snapshot", because: "you can install only a single hazelcast-management-center package"
-    conflicts_with "hazelcast-management-center@5.9.1.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.9.0.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.9.0", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.8.1.snapshot", because: "you can install only a single hazelcast-management-center package"
@@ -53,6 +52,7 @@ class HazelcastManagementCenterSnapshot < Formula
     conflicts_with "hazelcast-management-center-5.2", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.1", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.0", because: "you can install only a single hazelcast-management-center package"
+    conflicts_with "hazelcast-management-center-snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center", because: "you can install only a single hazelcast-management-center package"
 
     depends_on "openjdk@21" => :recommended
