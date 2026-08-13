@@ -1,4 +1,4 @@
-class HazelcastManagementCenter511 < Formula
+class HazelcastManagementCenterAT5111 < Formula
     desc "Tool to run Hazelcast Management Center"
     homepage "https://github.com/hazelcast/hazelcast-command-line"
     version "5.11.1"
@@ -41,7 +41,6 @@ class HazelcastManagementCenter511 < Formula
     conflicts_with "hazelcast-management-center@5.2.0", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.12.0.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.11.1.snapshot", because: "you can install only a single hazelcast-management-center package"
-    conflicts_with "hazelcast-management-center@5.11.1", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.11.0.snapshot", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.11.0", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center@5.10.0.snapshot", because: "you can install only a single hazelcast-management-center package"
@@ -57,6 +56,7 @@ class HazelcastManagementCenter511 < Formula
     conflicts_with "hazelcast-management-center-5.4", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.3", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.2", because: "you can install only a single hazelcast-management-center package"
+    conflicts_with "hazelcast-management-center-5.11", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.10", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.1", because: "you can install only a single hazelcast-management-center package"
     conflicts_with "hazelcast-management-center-5.0", because: "you can install only a single hazelcast-management-center package"
